@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src="jsIeSelectComponent.js"></script>
+  <link rel="stylesheet" href="jsIeSelectComponent.css">
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script>
+
+  var select=createSelect({
+    container:document.getElementById("container"),
+    optionList:[
+      {
+        label:'a',
+        value:'a v',
+      },
+      {
+        label:'b',
+        value:'b v',
+      },
+      {
+        label:'c',
+        value:'c v',
+        children:[
+          {
+            label:'ca',
+            value:'ca v',
+          },
+          {
+            label:'cb',
+            value:'cb v',
+          },
+          {
+            label:'cc',
+            value:'cc v'
+          }
+        ]
+      },
+    ],
+    // placeholder:'提示文本',
+    /* jsStyle:{
+      optionHeight:40,
+      width:100,
+    }, */
+  })
+
+  // 监听点击选项的事件。回调的参数为数据源中对应选项的部分
+  select.listenOptionClick(function(data){
+    console.log(data)
+  })
+  
+  
+</script>
+</html>

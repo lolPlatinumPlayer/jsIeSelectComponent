@@ -1,0 +1,40 @@
+.jsIeSelect{
+    position: relative;
+}
+.jsIeSelectToggle{
+    cursor: pointer;
+    padding: 0 8px;
+    background-color: #ebebeb;
+    border-radius: 8px;
+}
+.jsIeSelectToggleText.placeholder{
+    font-size: 14px;
+    color: #afafaf;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.jsIeSelectToggle .jsIeSelectArrow{
+    float: right;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.jsIeSelectBody{
+    position: absolute;
+    width: 100%;
+}
+.jsIeSelectBody .jsIeSelectOptionList{
+    position: absolute;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+.jsIeSelectOptionList .jsIeSelectOption{
+    padding: 0 8px;
+    cursor: pointer;
+}
